@@ -1,0 +1,27 @@
+---
+title: "Statistical_Inference1"
+author: "Laura Bennett"
+date: "May 28, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Statistical Inference for Data Science: Chapter 3 Exercises
+
+1. I pull a card from a deck and do not show you the result. I say that the resulting card is a heart. What is the probability that it is the queen of hearts?
+  + **Given that there are 13 cards in each suit, the probability that you drew the queen of hearts is $\frac{1}{13}$ **
+  
+2. The odds associated with a probability $p$ are defined as what?
+  + **While probability is a fractional value defining how likely something will happen, odds represent a ratio describing desired outcomes versus all other outcomes and may take on any value from zero to infinity. **
+  
+3. What is the probability of getting two sixes when rolling a pair of dice?
+  + **Since these are independent events, the probability of getting two sixes may be given as: $P(6 \cap 6)=P(6)P(6)=\left(\frac{1}{6} \right )\left( \frac{1}{6}\right )=\frac{1}{36}$**
+
+4. The probability that a manuscript gets accepted to a journal is 12%. However, given that a revision is asked for, the probability that it gets accepted is 90%. Is is possible that the probability that a manuscript has a revision asked for is 20%?
+  + **The laws of conditional probability of non-independent events state that $P(A|B)=\frac{P(A\cap B)}{P(B)}\rightarrow P(A\cap B)=P(A|B)P(B)$. If we let $A=0.12$ and $B=0.90$, we get that $P(A\cap B)=0.18$. However, since the probability that ANY manuscript is accepted is 12%, this is impossible, as 18% (the probability that a manuscript will be accepted AND revised) > 12% (the probability that a manuscript will be accepted whether it is revised or not). Therefore, it is not possible for $P(B)=0.20**
+  
+5. Suppose that 5% of housing projects have issues with asbestos. The sensitivity of a test for asbestos is 93% and the specificity is 88%. What is the probability that a housing project has no asbestos given a negative test expressed as a percentage to the nearest percentage point?
+  +  
