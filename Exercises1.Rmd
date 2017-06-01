@@ -2,7 +2,7 @@
 title: "Statistical_Inference1"
 author: "Laura Bennett"
 date: "May 21, 2017"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}

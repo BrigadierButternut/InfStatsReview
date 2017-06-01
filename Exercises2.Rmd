@@ -2,7 +2,7 @@
 title: "Statistical_Inference1"
 author: "Laura Bennett"
 date: "May 28, 2017"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -24,4 +24,4 @@ knitr::opts_chunk$set(echo = TRUE)
   + **The laws of conditional probability of non-independent events state that $P(A|B)=\frac{P(A\cap B)}{P(B)}\rightarrow P(A\cap B)=P(A|B)P(B)$. If we let $A=0.12$ and $B=0.90$, we get that $P(A\cap B)=0.18$. However, since the probability that ANY manuscript is accepted is 12%, this is impossible, as 18% (the probability that a manuscript will be accepted AND revised) > 12% (the probability that a manuscript will be accepted whether it is revised or not). Therefore, it is not possible for $P(B)=0.20**
   
 5. Suppose that 5% of housing projects have issues with asbestos. The sensitivity of a test for asbestos is 93% and the specificity is 88%. What is the probability that a housing project has no asbestos given a negative test expressed as a percentage to the nearest percentage point?
-  +  
+  +  **Bayes rule states that $P(B|A)=\frac{P(A|B)P(B)}{P(A|B)P(B)+P(A|B^c)P(B^c)}$. Let $A=$the probability that a test is negative and $B=$the probability that the house has asbestos. To make this more clear, I'll rewrite Baye's rule as $P(D^c|-)=\frac{P(-|D^c)P(D^c)}{P(-|D^c)P(D^c)+P(-|D)P(D)}$. Thus, $D(-|D^c)=0.88$ and $P(D^c)=1-0.05=0.95$. $P(-|D)$ is a bit tricker - however, it may easily be found by understanding that, if a house has asbestos, it still may only get one of two results on the test: positive or negative. Therefore, $P(-|D)=1-P(+|D)=1-0.93=0.07$. The probability that a house does not have asbestos given a negative test result is thus given by: $P(D^c|-)=\frac{(0.88)(0.95)}{(0.88)(0.95)+(0.07)(0.05)}=0.9958 \approx 100\%$ **
